@@ -41,7 +41,7 @@ public class StudentController {
     //localhost:8080/students/1
     @GetMapping("/students/{id}")
     public Student getStudent(@PathVariable("id") int studentId) {
-
+       System.out.println("Inside the method of getStudent of StudentController: ");
         return studentService.getStudentById(studentId);
     }
 
